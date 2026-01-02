@@ -7,7 +7,7 @@
 
 function canPost(message) {
   console.log(message.length);
-  return message.length < 40
+  return message.length <= 40
     ? 'short post'
     : message.length <= 80
     ? 'long post'
