@@ -4,3 +4,12 @@
 // "short post" if it fits within a 40-character limit.
 // "long post" if it's greater than 40 characters and fits within an 80-character limit.
 // "invalid post" if it's too long to fit within either limit.
+
+function canPost(message) {
+  console.log(message.length);
+  return message.length < 40
+    ? 'short post'
+    : message.length <= 80
+    ? 'long post'
+    : 'invalid post';
+}
